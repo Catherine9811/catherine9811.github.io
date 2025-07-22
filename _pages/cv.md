@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Sai Zhang's CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -11,35 +11,34 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Psychology, School of Biological and Behavioural Sciences, Queen Mary University of London, 2027 (expected)
+* M.S. with Merit in Clinical Psychology, Early Intervention in Psychosis, Kings College London, 2022
+* B.S. in Psychology, School of Psychology, Beihang University, 2020
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Feb 2023 - June 2023: Project Assistant
+  * Hanban Confucius Institute, UK (Full-time)
+  * Duties includes: Project support and adminstrative assistance
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Sep 2020 - Sep 2021: Project Assistant
+  * Beijing Western Sunshine Rural Development Foundation, China (Full-time)
+  * Duties included: Project coordination, support and management
+  * Supervisor: Hailong Bai
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Feb 2019 - Aug 2019: Research Assistant
+  * China Development Research Foundation, China (Internship)
+  * Duties included: Assistants and data analysis
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* EEG data processing and analysis
+* Statistical analysis with SPSS and R
+* Experimental design and orchestration
+
+Awards
+======
+* Best Poster Award for Windscreen Wiper Triggered Neural Responses as Predictors of Driver Drowsiness, The Physiology of Neural Oscillations, University of Oxford
 
 Publications
 ======
@@ -47,7 +46,13 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+Posters
+======
+  <ul>{% for post in site.posters reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+
+<!-- Talks
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
@@ -58,7 +63,8 @@ Teaching
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
+   -->
+
+<!-- Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->

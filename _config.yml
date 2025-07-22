@@ -9,82 +9,84 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Your Name / Site Title"
+title                    : "Sai Zhang"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+name                     : &name "Sai Zhang"
+description              : &description "PhD Student, Queen Mary University of London"
+url                      : https://catherine9811.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "Catherine9811/catherine9811.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+  avatar           : "profile.jpg"
+  name             : "Sai Zhang"
+  pronouns         : "she/her"  
+  bio              : "Exploring alertness fluctuation through physiology, behaviour, and human-computer interaction."
+  location         : "London"
+  employer         : "Queen Mary University of London"
+  uri              : "https://www.qmul.ac.uk/sbbs/staff/saizhang.html"
+  email            : "z.sai@qmul.ac.uk" 
 
   # Academic websites
-  academia         : # URL
-  arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-  impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
-  semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
-  scopus           : # URL
+  # academia         : # URL
+  # arxiv            : # URL - Update with the correct link to your profile
+  # googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  # impactstory      : # URL
+  orcid            : "http://orcid.org/0009-0006-6578-8144"
+  # semantic         : # URL
+  # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  # researchgate     : # URL
+  # scopus           : # URL
 
   # Repositories and software development
-  bitbucket        : # Username - Update with your username on the site
-  codepen          : # Username
-  dribbble         : # Username
-  github           : "academicpages"
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
+  # bitbucket        : # Username - Update with your username on the site
+  # codepen          : # Username
+  # dribbble         : # Username
+  github           : "Catherine9811"
+  # kaggle           : # Username  
+  # stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
-  facebook         : # Username
-  flickr           : # Username
-  foursquare       : # Username
-  goodreads        : # Username
-  google_plus      : # Username
-  keybase          : # Username
-  instagram        : # Username
-  lastfm           : # Username
-  linkedin         : # Username
-  mastodon         : # URL
-  medium           : # URL
-  pinterest        : # Username
-  soundcloud       : # Username
-  steam            : # Username
-  telegram         : # URL
-  tumblr           : # Username
-  twitter          : # Username for X / Twitter
-  vine             : # Username
-  weibo            : # Username
-  wikipedia        : # Username
-  xing             : # Username
-  youtube          : # Username
-  zhihu            : # Username
+  # artstation       : # Username
+  # bluesky          : "bsky.app" # Replace this with you Bluesky username
+  # facebook         : # Username
+  # flickr           : # Username
+  # foursquare       : # Username
+  # goodreads        : # Username
+  # google_plus      : # Username
+  # keybase          : # Username
+  # instagram        : # Username
+  # lastfm           : # Username
+  linkedin         : "sai-zhang-8051001bb"
+  # mastodon         : # URL
+  # medium           : # URL
+  # pinterest        : # Username
+  # soundcloud       : # Username
+  # steam            : # Username
+  # telegram         : # URL
+  # tumblr           : # Username
+  # twitter          : # Username for X / Twitter
+  # vine             : # Username
+  # weibo            : # Username
+  # wikipedia        : # Username
+  # xing             : # Username
+  # youtube          : # Username
+  # zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
+  # books:
+  #   title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
+    title: 'Journal Articles'
+  preprints:
+    title: 'Preprints'
+  # conferences:
+  #   title: 'Conference Papers'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -225,6 +227,12 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
+  posters:
+    output: true
+    permalink: /:collection/:path/
+  codes:
+    output: true
+    permalink: /:collection/:path/
   talks:
     output: true
     permalink: /:collection/:path/
@@ -272,6 +280,24 @@ defaults:
   - scope:
       path: ""
       type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _posters
+  - scope:
+      path: ""
+      type: posters
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _codes
+  - scope:
+      path: ""
+      type: codes
     values:
       layout: single
       author_profile: true
